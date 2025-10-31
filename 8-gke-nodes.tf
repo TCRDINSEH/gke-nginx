@@ -4,6 +4,7 @@ resource "google_service_account" "gke" {
 
 resource "google_container_node_pool" "general" {
   name    = "gkenode-for-tf"
+  location = var.gke_location
   cluster = google_container_cluster.gke.name
 
   autoscaling {
@@ -18,7 +19,7 @@ resource "google_container_node_pool" "general" {
 
   node_config {
     preemptible  = false
-    machine_type = "n2-standard-2"
+    machine_type = "e2-medium"
 
     labels = {
       role = "general"
