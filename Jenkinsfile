@@ -6,6 +6,7 @@ pipeline {
     REGION = "us-central1"
     // CLUSTER_NAME = "jenkins-gke"
     GCP_CREDENTIALS = "serviceaccountkey"  // Jenkins Secret File credential
+    GIT_CREDENTIALS = "tokenforgkenginx"   // Jenkins Git credential
   }
 
   stages {
