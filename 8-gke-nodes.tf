@@ -1,4 +1,4 @@
-resource "oogleg_service_account" "gke" {
+resource "google_service_account" "gke" {
   account_id = "gke-sa"
 }
 
