@@ -8,8 +8,8 @@ resource "google_container_node_pool" "general" {
   cluster = google_container_cluster.gke.name
 
   autoscaling {
-    min_node_count = 1
-    max_node_count = 2
+    min_node_count = 2
+    max_node_count = 3
   }
 
   management {
