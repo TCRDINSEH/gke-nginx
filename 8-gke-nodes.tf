@@ -19,7 +19,7 @@ resource "google_container_node_pool" "general" {
 
   node_config {
     preemptible  = false
-    machine_type = "n2-standard-2"
+    machine_type = "e2-medium"
 
     labels = {
       role = "general"
