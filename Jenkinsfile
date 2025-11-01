@@ -79,7 +79,7 @@ pipeline {
               
               echo "🚀 Applying Terraform changes (creating GKE)..."
               export GOOGLE_APPLICATION_CREDENTIALS="$GCP_KEYFILE"
-              terraform apply -var-file=dev_tf.tfvars --auto-approve                
+              terraform destroy -var-file=dev_tf.tfvars --auto-approve                
             '''
           }
         
