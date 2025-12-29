@@ -6,14 +6,13 @@ pipeline {
     REGION = "us-central1"
     // CLUSTER_NAME = "jenkins-gke"
     GCP_CREDENTIALS = "serviceaccountkey"  // Jenkins Secret File credential
-    GIT_CREDENTIALS = "tokenforgkenginx1"   // Jenkins Git credential
+    // GIT_CREDENTIALS = "tokenforgkenginx1"   // Jenkins Git credential
   }
 
   stages {
        stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/TCRDINSEH/gke-nginx.git',
-                credentialsId: "${GIT_CREDENTIALS}"
+                git branch: 'main', url: 'https://github.com/TCRDINSEH/gke-nginx.git'
         
             }
         }
