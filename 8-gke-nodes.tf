@@ -1,4 +1,4 @@
-resource "google_service_account" "gke" {
+data "google_service_account" "gke" {
   account_id = "gke-sa"
 }
 
@@ -26,7 +26,7 @@ resource "google_container_node_pool" "general" {
       role = "general"
     }
 
-    service_account = google_service_account.gke.email
+    service_account = data.google_service_account.gke.email
     oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform"
     ]
