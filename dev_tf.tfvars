@@ -27,7 +27,7 @@ private_region           = "us-central1"
 # -------------------------------
 # GKE Variable settings
 #-------------------------------
-gke_name                                    = "gkecluster"
+gke_name                                    = "kubernetescluster"
 gke_location                                = "us-central1-a"
 gke_initial_node_count                      = 1
 # gke_remove_default_node_pool                = true
