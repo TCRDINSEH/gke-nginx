@@ -20,6 +20,8 @@ resource "google_container_node_pool" "general" {
   node_config {
     preemptible  = false
     machine_type = "e2-medium"
+    disk_size_gb = 100          # <-- Add this line (or your desired size)
+    disk_type    = "pd-standard"
 
     labels = {
       role = "general"

@@ -32,10 +32,10 @@ gke_location                                = "us-central1-a"
 gke_initial_node_count                      = 1
 # gke_remove_default_node_pool                = true
 gke_networking_mode                         = "VPC_NATIVE"
-gke_cluster_secondary_range_name            = "k8s-pods"
-gke_services_secondary_range_name           = "k8s-services"
-gke_private_cluster_enable_private_nodes    = true
-gke_private_cluster_enable_private_endpoint = false
+# gke_cluster_secondary_range_name            = "k8s-pods"
+# gke_services_secondary_range_name           = "k8s-services"
+# gke_private_cluster_enable_private_nodes    = true
+# gke_private_cluster_enable_private_endpoint = false
 gke_private_cluster_master_ipv4_cidr_block  = "192.168.0.0/28"
 # -------------------------------
 # Firewall Variable settings
