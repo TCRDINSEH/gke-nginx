@@ -1,2 +1,3 @@
 this is for gke-nginx creation 
-using terraform,
+using terraform
+and updating 
