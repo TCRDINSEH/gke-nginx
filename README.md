@@ -1,1 +1,2 @@
-this is for gke-nginx creation
+this is for gke-nginx creation 
+using terraform
